@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow</title>
+</head>
+<style>
+/* 
+
+flex-shirink       : Esnek kutu içerisindeki element veya elementlerin, diğer elementlere göre küçüklük / büzülme oranının ne şekilde olması gerektiğini belirle.
+Değerler        : number | initial
+number          : rakam.
+initial         : HTML elementi varsayılan biçimlendirme değerine döner.
+
+
+*/
+.anaeleman{
+display: flex;
+width: 400px;
+height:100px;
+border:thin solid gray;
+}
+
+.eleman{
+flex-basis: 200px;
+flex-shrink:1;
+margin:10px;
+border: thin solid gray;
+text-align: center;
+}
+.eleman2{
+flex-basis: 200px;
+flex-shrink:2;
+margin:10px;
+border: thin solid gray;
+text-align: center;
+}
+
+</style>
+<body>
+
+    <div class="anaeleman">
+        <div class="eleman">1</div>
+        <div class="eleman2">2</div>
+        <div class="eleman">3</div>
+        <div class="eleman">4</div>
+    </div>
+    
+</body>
+</html>

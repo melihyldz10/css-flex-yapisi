@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-basis</title>
+</head>
+<style>
+    /* 
+    Flex-basis      : Esnek kutu içerisindeki element veya elementlerin başlangıç uzunluğu değerini belirler.
+    Değerler        : auto | number | initial
+    Auto            : otomatik değer alır.
+    number          : Rakam
+    initial         : HTML elementi varsayılan biçimlendirme değerine döner.
+    */
+
+.anaeleman{
+display: flex;
+width: 500px;
+height: 100px;
+border:thin solid gray;
+}
+
+.elemanbir{
+margin:10px;
+flex-basis:290px;
+border: thin solid gray;
+text-align: center;
+background-color: green;
+}
+.elemaniki{
+margin:10px;
+flex-basis:50px;
+border: thin solid gray;
+text-align: center;
+}
+.elemanuc{
+margin:10px;
+flex-basis:50px;
+border: thin solid gray;
+text-align: center;
+}
+.elemandort{
+margin:10px;
+flex-basis:50px;
+border: thin solid gray;
+text-align: center;
+}
+
+</style>
+<body>
+
+<div class="anaeleman">
+    <div class="elemanbir">1</div>
+    <div class="elemaniki">2</div>
+    <div class="elemanuc">3</div>
+    <div class="elemandort">4</div>
+</div>
+
+
+</body>
+</html>

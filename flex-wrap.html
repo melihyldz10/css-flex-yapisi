@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-wrap</title>
+</head>
+
+<style>
+/*
+flex-wrap       : Esnek kutuların satır kırılma özelliklerini belirler.
+Değerler        : nowrap | wrap | wrap-reverse | initial
+nowrap          : kırılma yok - varsayılan değer olduğu için bir değişiklik görülmez.
+wrap            : kırılma - ölçü aynı kalır ve satır sonunda bir kırılma yaşanarak alt satıra geçiş yapar.
+wrap-reverse    : ters kırılma
+initial         : HTML elementi varsayılan biçimlendirme değerine döner.
+
+*/
+
+.anaeleman{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    border: thin solid gray;
+}
+
+.eleman{
+    margin:5px;
+    width: 50px;
+    height: 50px;
+    border: thin solid gray;
+    text-align: center;
+}
+
+
+</style>
+<body>
+
+    <div class="anaeleman">
+        <div class="eleman">A</div>
+        <div class="eleman">B</div>
+        <div class="eleman">C</div>
+        <div class="eleman">D</div>
+        <div class="eleman">E</div>
+        <div class="eleman">F</div>
+        <div class="eleman">F</div>
+    </div>
+    
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-direction</title>
+</head>
+<style>
+ /* Flex-direction   : Esnek kutuların dizilim yönü özelliklerini belirler
+    Değerler         : row | row-reverse | column | colum-reverse | initial
+    Row              : Satır
+    row-reverse      : Ters Satır
+    Column           : Sütun
+    Column-reverse   : ters sütun
+    İnitial          : HTML elementi varsayılan biçimlendirme değerine döner.
+ */
+
+.anaeleman{
+    display: inline-flex;
+    width: 300px;
+    height: 300px;
+    border: thin solid grey;
+    flex-direction: row;
+}
+.eleman{
+    margin:10px;
+    border:thin solid grey;
+    width: 50px;
+    height: 50px;
+}
+
+
+</style>
+<body>
+
+<div class="anaeleman">
+    <div class="eleman">A</div>
+    <div class="eleman">B</div>
+    <div class="eleman">C</div>
+    <div class="eleman">D</div>
+</div>
+
+
+</body>
+</html>
